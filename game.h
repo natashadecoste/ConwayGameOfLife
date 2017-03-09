@@ -4,9 +4,10 @@
 
 // The class of cells to populate the board.
 // A Cell object contains the current status and the next generation 
-// status of the cell which is dependent on the numbers of living neighbours 
-// this cell has at the moment. A cell can be dead or alive which would have 
-// an impact on its neighbours. 
+// status of each cell. The status of a cell is dependent on the numbers 
+// of its living neighbours. A cell can be either dead or alive. A boolean
+// variable "alive" is used to implement this.
+
 class Cell{
 	public:
 		Cell(); // Constructor
@@ -15,8 +16,8 @@ class Cell{
 		void changeStatus(); // Reverses the current status
 		void kill(); // Changes the status to Dead
 		void resurrect(); // Changes the status to Alive
-		void updateState(); // Upades the board
-		void advance();
+		void updateState(); // Checks the number of living neigbhours 
+		void advance(); // and updats the status of a Cell
 
 		int livingNeighbours;
 		bool nextState;
@@ -27,7 +28,10 @@ class Cell{
 
 };
 
-// The class to hold the cells and game structure (back-end logic)
+// The class to hold the cells and the game structure (back-end logic)
+// To present the grid, two-dimensional array is used as the data structure
+// And randomize() will be called in the beginning of the program to create a
+// board filled will cells have random status.
 class ConwayGame{
 	public:
 		ConwayGame(); // Constructor

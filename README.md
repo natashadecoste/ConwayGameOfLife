@@ -1,10 +1,10 @@
-CONWAY'S GAME OF LIFE
+# CONWAY'S GAME OF LIFE
 
 
 =======
 
 
-# Simple simulation using openGL with the GLUT LIBRARY
+### Simple simulation using openGL with the GLUT LIBRARY
 
 THIS IS THE README FILE FOR ASSIGNMENT 1 PART 2 (GRAPHICS USING OPENGL)
 

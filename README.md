@@ -32,7 +32,7 @@ Any dead cell with exactly three live neighbors becomes a live cell, as if by re
 
 Files
 
-There is an game.cpp and gane.h file that contain the logic of the game (see the above specifications of cell life)
+There is an game.cpp and game.h file that contain the logic of the game (see the above specifications of cell life)
 
 There is also a conway.cpp file that runs openGL and GLUT.
 
